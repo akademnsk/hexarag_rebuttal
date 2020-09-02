@@ -1,0 +1,173 @@
+	\documentclass[a4paper]{article}
+
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage[affil-it]{authblk}
+\usepackage{cite}
+\usepackage{scrextend}
+\usepackage{verbatim}
+\usepackage{paralist}
+\usepackage[mediumspace,mediumqspace,Grey,squaren]{SIunits}
+\addtokomafont{labelinglabel}{\sffamily}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[dvipsnames]{xcolor}
+% \usepackage{xcolor}
+ \usepackage{changepage} %for adjustwidth command (indenting paragraph}
+\usepackage{SIunits}
+\usepackage{miller}
+\usepackage[version=3]{mhchem}
+\usepackage[left=3cm,right=2cm]{geometry}
+\usepackage{xr}
+\externaldocument{na2co3_exp,na2co3_exp_supp}
+\setlength{\parindent}{5ex}
+\graphicspath{{figures/}}
+
+\newcounter{reviewer}
+\setcounter{reviewer}{0}
+\newcounter{point}
+\setcounter{point}{0}
+
+\renewcommand{\thepoint}{P\,\thereviewer.\arabic{point})
+\newcommand{\reviewersection}{\stepcounter{reviewer} \bigskip \hrule
+                  \section*{Reviewer \thereviewer}}
+\newenvironment{point}
+   {\refstepcounter{point} \bigskip \noindent {\textbf{Reviewer~Point~\thepoint} } ---\ }
+   {\par }
+
+\newcommand{\shortpoint}[1]{\refstepcounter{point}  \bigskip \noindent 
+	{\textbf{Reviewer~Point~\thepoint} } ---~#1\par }
+
+\newenvironment{reply}
+   {\medskip \noindent \begin{sf}\textbf{Reply}:\  }
+   {\medskip \end{sf}}
+
+\newcommand{\shortreply}[2][]{\medskip \noindent \begin{sf}\textbf{Reply}:\  #2
+	\ifthenelse{\equal{#1}{}}{}{ \hfill \footnotesize (#1)}%
+	\medskip \end{sf}}
+
+\begin{document}
+
+\begin{center} \textbf{Metastable structures of CaCO$_3$ and their role in transformation of calcite to aragonite and post-aragonite \\ Manuscript ID: cg-2020-00589c} \end{center}
+
+\bigskip
+
+We would like to gratefully thank the reviewers for the careful read and precious suggestions, which make our manuscript more clear. Changes, which are shown in blue, have been done in accordance with all the suggestions
+\bigskip
+
+
+\bigskip
+
+%\noindent \emph{Recommendation: Publish after minor revision.} \bigskip
+
+%\noindent Comments:\\
+{\it General considerations:}: \medskip
+
+\textcolor{blue}{
+I suggest the authors to perform a deep English revision during the preparation of the in the revised version of the paper }\\
+Abstract, line 28: missing article “the” before “3-layered”. Articles are often missing throughout the manuscript.}\\
+\begin{itemize}
+\item Page 3 lines 10-11: “revealed theoretically” should be “theoretically revealed” as well as “synthesized experimentally” should be “experimentally synthesized”. These inversions are often needed throughout the manuscript. \\
+\item Page 7 line 24: please replace “transforamtion” with “transformation”. \\
+\item Page 8 lines 28-30: please replace “It make” with “It makes” and “The performed calculations shows” with “The performed calculations show”. \\
+\end{itemize}
+
+
+\textcolor{blue}{
+- In my opinion, a detailed description of the crystal structure of the metastable polymorphs hexarag and hexite is missing. I would expect the authors to publish details of the optimized geometries, not only cell parameters. Paraphs, a figure of both hexarag and hexite oriented parallel to (001) might be important to give a graphical visualization of both structures. The Figures 2, 3 and 5 are important to follow the text, however, an additional figure where the 2- and 6-layered polytypism is shown might be important too.}
+
+\textcolor{blue}{
+- In general, it is not usual to write “powder X-ray diffraction”. Please replace with “X-ray powder diffraction” when needed along the whole text. The correct abbreviation should be HT XRPD.
+}
+
+\textcolor{blue}{
+- Please use italics when needed: non-English terms (i.e., in situ, …), space groups (R-3, R-3c), state variable (e.g. P, T), cell parameters and interplanar distances (e.g. a, c, V, d). In some cases, throughout the text, italics is not correctly applied. Some examples below: \\
+ Page 2 line 50: replace PT with P-T. Page 9 line 24: replace PT with P-T.
+ }
+ 
+ \textcolor{blue}{- Sometimes the special character “ – ” is used. However, I do not understand its meaning (e.g. page 3 line 21, Page 6 line 48).
+}
+
+\bigskip
+
+
+\bigskip
+{\it Specific comments:}
+
+\textcolor{blue}{
+- Please erase from the abstract the acronyms declaration (HT PXRD) and (TEM) as they are not used along the abstract. Acronyms need to be specified at their first appearance in the text.
+}
+
+\textcolor{blue}{- Page 3 line 14: Please rephrase “Calcite is stable modification” with something more appropriate such as “The stable phase of CaCO3 at ambient condition is calcite”.
+}
+
+\textcolor{blue}{- Page 3 line 19: specify the “cp” acronym as “close packing”.
+}
+
+\textcolor{blue}{
+- Page 3 line 26: please replace “about” with “approximately”. The same suggestion needs to be applied at Page 11 line 8.
+}
+
+\textcolor{blue}{
+- Page 3 lines 33: please insert a reference relative to the sentence “Metastable at ambient pressure aragonite is stabilised above 2 GPa and remains stable up to 25 GPa.”.
+}
+
+\textcolor{blue}{
+- Page 3 lines 45-48: please rephrase.
+}
+
+\textcolor{blue}{
+- Page 4 lines 45-50: Were topological analyses performed at HP? At Page 12 the manuscript is focused on the HP behaviour of stable and metastable polymorphs. However, no details are given about the HP calculations in the “Methods” section. I think that some details should be given.
+}
+
+\textcolor{blue}{
+- Page 4 lines 50-53: no details are given about the used samples (chemistry, locality, …). Please insert some information together with the value of Co$K\alpha$.
+}
+
+\textcolor{blue}{
+- Page 5 line 17: are site scattering used for neutral atoms? Please specify.
+}
+
+\textcolor{blue}{
+- Page 5 lines 21-22: please rephrase since the meaning is not clear. Might be something like “…since at higher T aragonite is replaced by calcite”?
+}
+
+\textcolor{blue}{
+- Page 5 line 41: does the sentence “In molecular dynamic simulations, aragonite structure is stable up to the temperature of 700-800 K.” come out from your work? Or it is maybe taken from literature? Please clarify and, if appropriate, insert a reference.
+}
+
+\textcolor{blue}{
+- Page 7 lines 29-39: The comparison of hexarag with other carbonates is quite interesting. However, the discussion might go deeper in explaining the influence of other cation than Ca on the HT behaviour of CaCO3-like minerals. In particular:
+– no data on the variation in distribution of Ba/Ca atoms are given. Did the authors perform such calculations? If yes, please give some “quantitative” results. If not, references are needed;– in the last sentence, Sr is taken into account. However, it is not clear why the authors introduced Sr. Are there experimental/theoretical evidences to link Sr to the Ba behaviour in CaCO3 crystal structures? Please explain.
+}
+
+\textcolor{blue}{
+- Page 7 lines 51-52, Page 8 line 28: Is the sentence referring to Figure 3? What is “stagger” used for? I do not understand its meaning in this context. This is probably my fault; however, some of other readers might have such a conflict. Please, explain what “two-staggered” represents.
+}
+
+\textcolor{blue}{
+- Page 8 lines 43-45: the final sentence is too qualitative. Please, insert details, e.g. which “specific conditions are necessary for their stabilisations”.
+}
+
+\textcolor{blue}{
+- Page 9 line 35-37: Please rephrase the sentence “Calcite, structure with n = 3, is the exclusion from this trend.”, since its meaning is ambiguous.
+}
+
+\textcolor{blue}{
+- Page 9 Figure 5: please insert the orientation of the crystal structures as well as the meaning of the different colours.
+}
+
+\textcolor{blue}{
+- Page 10 line 48: I think that the authors meant to refer to Table 3 instead of Figure 3. Please correct.
+}
+
+\textcolor{blue}{
+- Page 11 line 11: I do not understand the reason for the sentence “…there is a way to increase this temperature.”. The reader expects the authors to give some details in the following of the manuscript. However, no speculations/discussions are given about it. Please, either add some consideration or erase this sentence.
+}
+
+\textcolor{blue}{
+- Page 12 Figure 9: there are almost no discussions related to Figure 9. Moreover, at lines 44 onwards, the authors refer to the P range 15-40 GPa that is quite higher that what reported in Figure 9. Please, either make Figure 9 being in accord with the text or vice versa.By the above-mentioned comments, I do recommend the paper to be published in Crystal Growth and Design journal after a revision of the manuscript following the proposed suggestions and comments.
+}
+\end{document}
